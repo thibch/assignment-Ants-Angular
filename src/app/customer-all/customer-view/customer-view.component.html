@@ -1,0 +1,10 @@
+<h2>The customers</h2>
+<ul class="list-group">
+  <app-customer  *ngFor="let customer of customers;"
+                 [email]="customer.email"
+                 [name]="customer.name"
+                 [fisrtName]="customer.firstName"
+                 [phoneNumber]="customer.phoneNumber"
+                 [id]="customer.id"></app-customer>
+</ul>
+<a [routerLink]="'/new-customer'">New</a>
