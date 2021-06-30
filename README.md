@@ -1,6 +1,8 @@
 # TestAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.\
+I learned Angular with this project so it might be a lit messed up on the calling/receving info with the API server.\
+There is a log in/log out that do 0 calls and is just a flipping of a boolean.\
 
 ## Development server
 
@@ -16,6 +18,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
+(Actually there is no Unit test, sorry)\
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Running end-to-end tests
