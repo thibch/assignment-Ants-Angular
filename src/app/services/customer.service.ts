@@ -1,4 +1,4 @@
-import {Subject, Subscription} from "rxjs";
+import {Subject} from "rxjs";
 import {Customer} from "../models/Customer.models";
 import {Injectable} from "@angular/core";
 import {HttpClient, HttpHeaders} from "@angular/common/http";
@@ -69,7 +69,6 @@ export class CustomerService {
   async addCustomer(firstName: string, lastName: string, email: string, phoneNumber: string){
     const customer = new Customer(0, firstName, lastName, email, phoneNumber);
     await this.saveOneCustomerToServer(customer); // We send the new customer to the server
-    this.customers.push(customer); // TODO : retirer ça
     this.getCustomersFromServer();
   }
 
